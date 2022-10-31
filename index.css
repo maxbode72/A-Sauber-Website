@@ -47,7 +47,7 @@ nav {
     color: var(--color-primary);
 }
 
-@media (max-width: 35em) {
+@media (max-width: 70em) {
   .primary-header {
     padding: 0 8em 0 0;
   }
@@ -96,7 +96,7 @@ nav {
 
 }
 
-@media (min-width: 35em) {
+@media (min-width: 70em) {
   .primary-navigation {
     --gap: clamp(1.5rem, 20vw, 3rem);
     padding-block: 2rem;
@@ -128,7 +128,7 @@ nav {
   max-width: 45ch;
 }
 
-@media (max-width: 35em) {
+@media (max-width: 55em) {
   .hero {
     padding: 1.5em;
     background-image: linear-gradient(#07bddb, #51d3e7);

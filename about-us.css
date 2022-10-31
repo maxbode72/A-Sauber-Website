@@ -94,7 +94,7 @@ nav {
   }
 }
 
-@media (min-width:70em) {
+@media (min-width: 70em) {
   .primary-navigation {
     --gap: clamp(1.5rem, 20vw, 3rem);
     padding-block: 2rem;
@@ -102,13 +102,9 @@ nav {
   }
 }
 
-
 /* --------- */
 /*  Wrapper  */
 /* --------- */
-
-
-
 
 /* -------- */
 /*  Footer  */
