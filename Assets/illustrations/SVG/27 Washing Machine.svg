@@ -1,0 +1,58 @@
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #455a64;
+      }
+
+      .cls-2 {
+        fill: #bdbdbd;
+      }
+
+      .cls-3 {
+        fill: #90a4ae;
+      }
+
+      .cls-4 {
+        fill: #1a237e;
+      }
+
+      .cls-5 {
+        fill: #80deea;
+      }
+
+      .cls-6 {
+        fill: #ef6c00;
+      }
+
+      .cls-7 {
+        fill: #e65100;
+      }
+
+      .cls-8 {
+        fill: #1976d2;
+      }
+
+      .cls-9 {
+        fill: #0d47a1;
+      }
+    </style>
+  </defs>
+  <title>27 Washing Machine</title>
+  <g>
+    <g>
+      <rect class="cls-1" x="15" y="55" width="8" height="6" rx="1"/>
+      <rect class="cls-1" x="41" y="55" width="8" height="6" rx="1"/>
+    </g>
+    <rect class="cls-2" x="11" y="3" width="42" height="54" rx="5"/>
+    <path class="cls-3" d="M48,3h-.1009A5.019,5.019,0,0,1,48,4.0012v39a10,10,0,0,1-10,10H11.1013A5.0084,5.0084,0,0,0,16,57H48a5.0059,5.0059,0,0,0,5-5V8A5.0059,5.0059,0,0,0,48,3Z"/>
+    <circle class="cls-4" cx="32" cy="37" r="13"/>
+    <circle class="cls-5" cx="32" cy="37" r="9"/>
+    <path class="cls-6" d="M53,19V8a5.0059,5.0059,0,0,0-5-5H16a5.0059,5.0059,0,0,0-5,5V19Z"/>
+    <path class="cls-7" d="M48,3H43.5a5.0059,5.0059,0,0,1,5,5V19H53V8A5.0059,5.0059,0,0,0,48,3Z"/>
+    <circle class="cls-2" cx="43" cy="11" r="4"/>
+    <rect class="cls-5" x="17" y="7" width="10" height="6" rx="1"/>
+    <path class="cls-8" d="M40.9257,38.1a10.6568,10.6568,0,0,1-6.7831-1.0042A10.6018,10.6018,0,0,0,30.0005,36a10.9894,10.9894,0,0,0-6.3164,2.5342l-.4686.4029a8.9932,8.9932,0,0,0,17.71-.8372Z"/>
+    <path class="cls-9" d="M38.1894,38.2543a8.9714,8.9714,0,0,1-14.9432.6565l-.0307.0263a8.9932,8.9932,0,0,0,17.71-.8372A9.51,9.51,0,0,1,38.1894,38.2543Z"/>
+  </g>
+</svg>

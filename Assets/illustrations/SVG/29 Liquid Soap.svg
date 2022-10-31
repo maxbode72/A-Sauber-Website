@@ -1,0 +1,62 @@
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #90a4ae;
+      }
+
+      .cls-2 {
+        fill: #546e7a;
+      }
+
+      .cls-3 {
+        fill: #42a5f5;
+      }
+
+      .cls-4 {
+        fill: #1e88e5;
+      }
+
+      .cls-5 {
+        fill: #bdbdbd;
+      }
+
+      .cls-6 {
+        fill: #1a237e;
+      }
+
+      .cls-7 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-8 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-9 {
+        fill: url(#linear-gradient-3);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="49" y1="18" x2="49" y2="24" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#a1dfff"/>
+      <stop offset="1" stop-color="#21c1ff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="53" y1="28" x2="53" y2="34" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" x1="57" y1="13" x2="57" y2="19" xlink:href="#linear-gradient"/>
+  </defs>
+  <title>29 Liquid Soap</title>
+  <g>
+    <rect class="cls-1" x="22" y="7" width="16" height="10" rx="1"/>
+    <path class="cls-2" d="M26.2143,12a1,1,0,0,1-1-1V7H23a1,1,0,0,0-1,1v8a1,1,0,0,0,1,1H37a1,1,0,0,0,1-1V12Z"/>
+    <path class="cls-3" d="M55,7,49.9326,3.2a1,1,0,0,0-.6-.2H19a1,1,0,0,0-1,1V8a1,1,0,0,0,1,1H47.667L51.4,11.8A.999.999,0,0,0,52.8,11.6l2.4-3.2A.9992.9992,0,0,0,55,7Z"/>
+    <path class="cls-4" d="M48.9667,6.75H22.3a1,1,0,0,1-1-1V3H19a1,1,0,0,0-1,1V8a1,1,0,0,0,1,1H47.667L51.4,11.8A.999.999,0,0,0,52.8,11.6l.8572-1.1428Z"/>
+    <rect class="cls-5" x="17" y="15" width="26" height="46" rx="5"/>
+    <path class="cls-1" d="M42.3929,57h-16a4.8031,4.8031,0,0,1-5-4.5652v-32.87a4.8031,4.8031,0,0,1,5-4.5652H22a5.0059,5.0059,0,0,0-5,5V56a5.0059,5.0059,0,0,0,5,5H38a5.0049,5.0049,0,0,0,4.9037-4.0472C42.7333,56.9689,42.5678,57,42.3929,57Z"/>
+    <rect class="cls-6" x="17" y="25" width="26" height="25"/>
+    <g>
+      <circle class="cls-7" cx="49" cy="21" r="3"/>
+      <circle class="cls-8" cx="53" cy="31" r="3"/>
+      <circle class="cls-9" cx="57" cy="16" r="3"/>
+    </g>
+  </g>
+</svg>

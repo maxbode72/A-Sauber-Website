@@ -1,0 +1,277 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", Helvetica, Arial;
+  font-size: 14px;
+}
+
+/* ---------------- */
+/*   Header & nav   */
+/* ---------------- */
+
+nav {
+  align-items: center;
+}
+
+.primary-header {
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2em;
+  height: 80px;
+}
+
+.mobile-nav-toggle {
+  display: none;
+}
+
+.logo {
+  margin: 1.5em;
+  height: 4em;
+}
+
+.primary-navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: var(--color-grey);
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.nav-link:hover {
+    color: var(--color-primary);
+}
+
+@media (max-width: 35em) {
+  .primary-header {
+    padding: 0 8em 0 0;
+  }
+
+  .primary-navigation {
+    --gap: 2em;
+
+    position: fixed;
+    z-index: 1000;
+    inset: 0 0 0 30%;
+
+    text-align: left;
+
+    flex-direction: column;
+    padding: 5em 2em;
+    background: var(--color-white);
+
+    transform: translateX(100%);
+    transition: transform 300ms ease-out;
+
+    overflow-y: hidden;
+
+  }
+
+  .primary-navigation[data-visible="true"] {
+    transform: translateX(0%);
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+    position: absolute;
+    width: 2rem;
+    aspect-ratio: 1;
+    top: 1.5rem;
+    right: 1.5rem;
+    z-index: 9999;
+    border: 0;
+    background: transparent;
+    background-image: url("assets/icons/burgermenu.svg");
+    background-repeat: no-repeat;
+  }
+
+  .mobile-nav-toggle[aria-expanded="true"] {
+    background-image: url("assets/icons/menu-close.svg");
+  }
+
+}
+
+@media (min-width: 35em) {
+  .primary-navigation {
+    --gap: clamp(1.5rem, 20vw, 3rem);
+    padding-block: 2rem;
+    padding-inline: clamp(3rem, 5vw, 10rem);
+  }
+}
+
+/* ------ */
+/*  Hero  */
+/* ------ */
+
+.hero {
+  background-image: url(assets/illustrations/hero-illustration.svg);
+  background-position: right;
+  background-repeat: no-repeat;
+
+  height: 82vh;
+  padding: 2em 5em;
+  
+  justify-content: center;
+}
+
+.hero h1 {
+  max-width: 12ch;
+}
+
+.hero p{
+  margin-bottom: 3em;
+  max-width: 45ch;
+}
+
+@media (max-width: 35em) {
+  .hero {
+    padding: 1.5em;
+    background-image: linear-gradient(#07bddb, #51d3e7);
+  }
+}
+
+
+/* ----------------- */
+/*  Service Section  */
+/* ----------------- */
+
+.service {
+  padding: 3em;
+  gap: 3em;
+  min-height: 18em;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--color-offwhite);
+}
+
+.service-title span {
+  max-width: 45ch;
+  color: var(--color-grey);
+
+}
+
+.service-wrapper {
+  justify-content: space-around;
+  width: 100%;
+}
+
+.service-container {
+  display: flex;
+  gap: 1em;
+  background-color: var(--color-white);
+  max-width: 35ch;
+  height: 8em;
+  padding: 1em;
+  border-radius: 3px;
+  text-align: left;
+  align-items: center;
+}
+
+.service-container img {
+  height: 4.5em;
+  aspect-ratio: 1;
+}
+
+.service-content {
+  display: flex;
+  flex-direction: column;
+  gap: .25em;
+}
+
+.service-content span {
+  font-weight: 600;
+}
+
+.service-content p {
+  font-size: 0.85em;
+  color: var(--color-grey);
+  margin: 0;
+}
+
+
+@media (max-width: 35em) {
+  .service {
+    padding: 1.5em;
+  }
+}
+
+
+/* -------- */
+/*  Footer  */
+/* -------- */
+
+footer {
+  background-color: var(--color-offwhite);
+  padding: 2em;
+  justify-content: space-around;
+  border-top: 1px solid var(--color-primary);
+}
+
+footer nav {
+  width: 12em;
+}
+
+.logo-footer {
+  height: 7em;
+}
+
+nav span {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--color-grey);
+  cursor: default;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sec-nav-link {
+  color: var(--color-grey);
+}
+
+.sec-nav-link:hover {
+  color: var(--color-primary);
+}
+
+.contact span {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--color-grey);
+  cursor: default;
+}
+
+.contact-container {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.contact-icon {
+  height: 2em;
+  aspect-ratio: 1;
+  fill: red;
+}
+
+@media (max-width: 35em) {
+  footer {
+    justify-content: left;
+    --gap: 2em;
+    flex-direction: column;
+  }
+
+  .logo-container {
+    display: none;
+  }
+
+  .secondary-navigation {
+    --gap: 1em;
+  }
+}
