@@ -107,6 +107,60 @@ nav {
 /*  Wrapper  */
 /* --------- */
 
+.service {
+  padding: 3em;
+  gap: 3em;
+  min-height: 18em;
+}
+
+.service-title span {
+  max-width: 45ch;
+  color: var(--color-grey);
+}
+
+.service-wrapper {
+  width: 100%;
+}
+
+.service-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  background-color: var(--color-primary-light);
+  width: 25em;
+  padding: 1em;
+  border-radius: 3px;
+  text-align: left;
+}
+
+.service-container img {
+  height: 4.5em;
+  aspect-ratio: 1;
+}
+
+.service-content {
+  display: flex;
+  flex-direction: column;
+  gap: .25em;
+}
+
+.service-content span {
+  font-weight: 600;
+  font-size: 1.25em;
+}
+
+.service-content p {
+  font-size: 0.85em;
+  color: var(--color-grey);
+  margin: 0;
+}
+
+
+@media (max-width: 35em) {
+  .service {
+    padding: 1.5em;
+  }
+}
 
 
 

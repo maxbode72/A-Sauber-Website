@@ -110,7 +110,7 @@ nav {
 
 .hero {
   background-image: url(assets/illustrations/hero-illustration.svg);
-  background-position: right;
+  background-position: right bottom;
   background-repeat: no-repeat;
 
   height: 82vh;
@@ -128,10 +128,12 @@ nav {
   max-width: 45ch;
 }
 
-@media (max-width: 55em) {
+@media (max-width: 70em) {
   .hero {
     padding: 1.5em;
-    background-image: linear-gradient(#07bddb, #51d3e7);
+    padding: 3em;
+    height: 100vh;
+    justify-content: start;
   }
 }
 
