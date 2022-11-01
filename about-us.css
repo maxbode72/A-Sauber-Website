@@ -188,9 +188,21 @@ section {
 }
 
 .aboutus-content p {
+  font-size: 1.125em;
+  line-height: 1.5em;
   max-width: 80ch;
 }
 
+
+@media (max-width: 50em) {
+  .aboutus-container {
+    flex-direction: column;
+  }
+
+  .aboutus-container img {
+    transform: none;
+  }
+}
 
 
 /* -------- */
