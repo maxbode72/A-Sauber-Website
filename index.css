@@ -156,13 +156,19 @@ nav {
 /* ----------------- */
 
 .service {
-  padding: 5em 3em;
-  gap: 3em;
-  min-height: 18em;
+  background-color: var(--color-primary-light);
+  min-height: 30em;
+  align-items: center;
   justify-content: center;
+}
+
+.service-box {
+  max-width: 1800px;
+  width: 100%;
+  padding: 7em 3em;
+  gap: 5em;
   align-items: center;
   text-align: center;
-  background-color: var(--color-primary-light);
 }
 
 .service-title span {
@@ -212,6 +218,29 @@ nav {
 
 .service-price {
   font-weight: 700;
+}
+
+/* ----------------- */
+/*  Contact Section  */
+/* ----------------- */
+
+.contact-section {
+  min-height: 18em;
+  align-items: center;
+}
+
+.contact-box {
+  max-width: 1800px;
+  width: 100%;
+  padding: 5em 3em;
+  gap: 3em;
+  align-items: center;
+  text-align: center;
+}
+
+.service-title span {
+  max-width: 45ch;
+  color: var(--color-grey);
 }
 
 

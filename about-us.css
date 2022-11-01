@@ -117,6 +117,18 @@ nav {
 /*  Wrapper  */
 /* --------- */
 
+.wrapper {
+  justify-content: center;
+}
+
+section {
+  padding: 3em;
+  gap: 3em;
+  max-width: 1800px;
+}
+
+
+
 /* -------- */
 /*  Footer  */
 /* -------- */
