@@ -47,7 +47,17 @@ nav {
   color: var(--color-primary);
 }
 
+.primary-navigation a {
+  white-space: nowrap;
+}
+
 @media (max-width: 70em) {
+  nav ul li:last-child {
+    display: none;
+  }
+}
+
+@media (max-width: 55em) {
   .primary-header {
     padding: 0 8em 0 0;
   }
@@ -94,78 +104,87 @@ nav {
   }
 }
 
-@media (min-width: 70em) {
+@media (min-width: 50em) {
   .primary-navigation {
     --gap: clamp(1.5rem, 20vw, 3rem);
     padding-block: 2rem;
-    padding-inline: clamp(3rem, 5vw, 10rem);
+    padding-inline: clamp(1rem, 2vw, 3rem);
   }
 }
-
 
 /* --------- */
 /*  Wrapper  */
 /* --------- */
 
 .wrapper {
-    padding: 5em 5em;
-    width: 100%;
-    justify-content: space-between;
-    --gap: 4em;
+  justify-content: center;
+}
+
+section{
+  padding: 3em;
+  width: 100%;
+  justify-content: space-between;
+  max-width: 1800px;
+  --gap: 3em;
 }
 
 .hero {
-    max-width: 70ch;
-    margin-bottom: 5em;
+  padding-block: 3em;
 }
 
 .hero-title {
-    margin-bottom: 4em;
-}
-
-.hero h2 {
-    line-height: 1.25em;
+  --gap: 1rem;
 }
 
 .hero p {
-    font-size: 1.15em;
-    line-height: 1.5em;
-    color: var(--color-grey);
+  font-size: 1.15em;
+  line-height: 1.5em;
+  color: var(--color-grey);
+  max-width: 70ch;
+}
+
+.contact-wrapper {
+  padding-block: 3em;
+  flex-direction: row;
 }
 
 @media (max-width: 35em) {
-    .wrapper {
-        padding: 5em 1em;
-    }
+  .wrapper {
+    padding: 2em 1em 4em 1em;
+  }
 
-    .hero {
-        margin-bottom: 1em;
-    }
+  .contact-wrapper {
+    flex-direction: column-reverse;
+    padding-block: 0;
+  }
+
+  .container {
+    width: auto !important;
+  }
 }
-
 
 /* -------------- */
 /*  Contact Data  */
 /* -------------- */
 
 .contact-data {
-    --gap: 2em;
+  --gap: 2em;
 }
 
 .contact-data-container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
 }
 
 .contact-data-container p {
-    margin: 0;
+  margin: 0;
 }
 
 .contact-title {
-    text-transform: uppercase;
-    font-weight: 600;
+  text-transform: uppercase;
+  font-weight: 600;
 }
-
 
 /* --------- */
 /*  Webform  */
@@ -286,6 +305,13 @@ nav ul {
   color: var(--color-primary);
 }
 
+.contact-wrapper-footer {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em;
+}
+
 .contact span {
   text-transform: uppercase;
   font-weight: 600;
@@ -300,9 +326,12 @@ nav ul {
 }
 
 .contact-icon {
-  height: 2em;
+  height: 1.5rem;
   aspect-ratio: 1;
-  fill: red;
+}
+
+.contact p {
+  color: var(--color-grey);
 }
 
 @media (max-width: 35em) {

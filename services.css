@@ -47,7 +47,17 @@ nav {
   color: var(--color-primary);
 }
 
+.primary-navigation a {
+  white-space: nowrap;
+}
+
 @media (max-width: 70em) {
+  nav ul li:last-child {
+    display: none;
+  }
+}
+
+@media (max-width: 55em) {
   .primary-header {
     padding: 0 8em 0 0;
   }
@@ -94,11 +104,11 @@ nav {
   }
 }
 
-@media (min-width:70em) {
+@media (min-width: 50em) {
   .primary-navigation {
     --gap: clamp(1.5rem, 20vw, 3rem);
     padding-block: 2rem;
-    padding-inline: clamp(3rem, 5vw, 10rem);
+    padding-inline: clamp(1rem, 2vw, 3rem);
   }
 }
 
@@ -107,14 +117,22 @@ nav {
 /*  Wrapper  */
 /* --------- */
 
+.wrapper {
+  justify-content: center;
+}
+
 .service {
   padding: 3em;
   gap: 3em;
-  min-height: 18em;
+  max-width: 1800px;
+}
+
+.service-title {
+  padding-block: 3em;
 }
 
 .service-title span {
-  max-width: 45ch;
+  max-width: 70ch;
   color: var(--color-grey);
 }
 
@@ -124,42 +142,56 @@ nav {
 
 .service-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: roW;
   gap: 1em;
   background-color: var(--color-primary-light);
-  width: 25em;
-  padding: 1em;
+  width: 100%;
+  max-height: 15em;
+  padding: 2em;
   border-radius: 3px;
   text-align: left;
 }
 
 .service-container img {
-  height: 4.5em;
+  height: 7em;
   aspect-ratio: 1;
+  margin: 2em;
 }
 
 .service-content {
   display: flex;
   flex-direction: column;
-  gap: .25em;
-}
-
-.service-content span {
-  font-weight: 600;
-  font-size: 1.25em;
+  width: 100%;
+  gap: 1rem;
 }
 
 .service-content p {
   font-size: 0.85em;
   color: var(--color-grey);
   margin: 0;
+  flex: 1;
+}
+
+.service-price {
+  font-weight: 800;
+  font-size: var(--fz-400);
 }
 
 
-@media (max-width: 35em) {
+@media (max-width: 50em) {
   .service {
     padding: 1.5em;
   }
+
+  .service-container {
+    flex-direction: column;
+    max-height: none;
+  }
+
+  .service-container img {
+    height: 4.5rem;
+  }
+
 }
 
 
@@ -203,6 +235,13 @@ nav ul {
   color: var(--color-primary);
 }
 
+.contact-wrapper {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: .75em;
+}
+
 .contact span {
   text-transform: uppercase;
   font-weight: 600;
@@ -217,9 +256,12 @@ nav ul {
 }
 
 .contact-icon {
-  height: 2em;
+  height: 1.5rem;
   aspect-ratio: 1;
-  fill: red;
+}
+
+.contact p {
+  color: var(--color-grey);
 }
 
 @media (max-width: 35em) {

@@ -40,120 +40,107 @@
                     <a href="/contact.html" class="active nav-link">Kontakt</a>
                 </li>
                 <li>
-                    <button class="button-small text-caps" href="contact.html">JETZT ANFRAGEN</button>
+                    <a href="/contact.html" class="button-small text-caps">JETZT ANFRAGEN</a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <div class="wrapper flex row wrap max-width">
-        <div class="hero">
-            <div class="hero-title">
-                <h2>Sie möchten weitere Informationen zu unseren Leistungen?</h2>
-                <p>Nutzen Sie einfach unser Kontaktformular und senden Sie uns eine kurze Nachricht.
-                    Wir unterstützen Sie gerne bei Ihrem Anliegen und melden uns schnellstmöglich bei Ihnen.</p>
-            </div>
-            <div class="contact-data flex column">
-                <div class="contact-data-container">
-                    <p class="contact-title">Adresse</p>
-                    <p>Musterstraße 72<br>30982 München, Deutschland</p>
-                </div>
-                <div class="contact-data-container">
-                    <p class="contact-title">Telefonnummer</p>
-                    <p>+49 123 4567 8901</p>
-                </div>
-                <div class="contact-data-container">
-                    <p class="contact-title">Email</p>
-                    <p>mail@example.com</p>
+    <div class="wrapper flex">
+        <section>
+            <div class="hero flex column">
+                <div class="hero-title flex column">
+                    <h2>Treten Sie in Kontakt mit uns</h2>
+                    <p>Nutzen Sie einfach unser Kontaktformular und senden Sie uns eine kurze Nachricht.
+                        Wir unterstützen Sie gerne bei Ihrem Anliegen und melden uns schnellstmöglich bei Ihnen.</p>
                 </div>
             </div>
-        </div>
-        <div class="container">
-            <form action="https://formsubmit.co/d61cd93979b4267d5e6c2437db37aed2" method="POST" class="form">
-                <div class="name-group">
-                    <div class="form-group vorname">
-                        <label for="vorname" class="form-label">Vorname*</label>
-                        <input type="vorname" class="form-control" id="vorname" name="vorname" placeholder="Vorname"
-                            tabindex="1" required>
+            <div class="contact-wrapper flex row">
+                <div class="container">
+                    <form action="https://formsubmit.co/d61cd93979b4267d5e6c2437db37aed2" method="POST" class="form">
+                        <div class="name-group">
+                            <div class="form-group vorname">
+                                <label for="vorname" class="form-label">Vorname*</label>
+                                <input type="vorname" class="form-control" id="vorname" name="vorname"
+                                    placeholder="Vorname" tabindex="1" required>
+                            </div>
+                            <div class="form-group nachname">
+                                <label for="nachname" class="form-label">Nachname*</label>
+                                <input type="nachname" class="form-control" id="nachname" name="nachname"
+                                    placeholder="Nachname" tabindex="2" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email*</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email Adresse"
+                                tabindex="3" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefonnummer" class="form-label">Telefonnummer</label>
+                            <input type="tel" class="form-control" id="telefonnummer" name="telefonnummer"
+                                placeholder="Telefonnummer" tabindex="4">
+                        </div>
+                        <div class="form-group">
+                            <label for="betreff" class="form-label">Betreff*</label>
+                            <input type="text" class="form-control" id="betreff" name="betreff" placeholder="Betreff"
+                                tabindex="5" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="anmerkungen" class="form-label">Anmerkungen</label>
+                            <textarea class="form-control" rows="5" cols="50" id="anmerkungen" name="anmerkungen"
+                                placeholder="Platz für Ihre Anmerkungen" tabindex="6"></textarea>
+                        </div>
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/contact.html">
+                        <input type="hidden" name="_captcha" value="false">
+                        <div>
+                            <button type="submit" class="btn button-small">Abschicken</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="contact-data flex column">
+                    <div class="contact-data-container">
+                        <p class="contact-title">Adresse</p>
+                        <p>Musterstraße 72<br>30982 München, Deutschland</p>
                     </div>
-                    <div class="form-group nachname">
-                        <label for="nachname" class="form-label">Nachname*</label>
-                        <input type="nachname" class="form-control" id="nachname" name="nachname" placeholder="Nachname"
-                            tabindex="2" required>
+                    <div class="contact-data-container">
+                        <p class="contact-title">Telefonnummer</p>
+                        <p>+49 123 4567 8901</p>
+                    </div>
+                    <div class="contact-data-container">
+                        <p class="contact-title">Email</p>
+                        <p>mail@example.com</p>
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="email" class="form-label">Email*</label>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="Email Adresse"
-                        tabindex="3" required>
-                </div>
-                <div class="form-group">
-                    <label for="telefonnummer" class="form-label">Telefonnummer*</label>
-                    <input type="tel" class="form-control" id="telefonnummer" name="telefonnummer"
-                        placeholder="Telefonnummer" tabindex="4" required>
-                </div>
-                <div class="form-group">
-                    <label for="straße" class="form-label">Straße & Hausnummer*</label>
-                    <input type="text" class="form-control" id="straße" name="straße" placeholder="Straße, Hausnummer"
-                        tabindex="5" required>
-                </div>
-                <div class="wohnort-group">
-                    <div class="form-group plz">
-                        <label for="postleitzahl" class="form-label">PLZ*</label>
-                        <input type="number" class="form-control " id="postleitzahl" name="postleitzahl"
-                            placeholder="Postleitzahl" tabindex="6" required>
-                    </div>
-                    <div class="form-group ort">
-                        <label for="ort" class="form-label">Ort*</label>
-                        <input type="text" class="form-control" id="ort" name="ort" placeholder="Wohnort" tabindex="7"
-                            required>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="betreff" class="form-label">Betreff*</label>
-                    <input type="text" class="form-control" id="betreff" name="betreff" placeholder="Betreff"
-                        tabindex="8" required>
-                </div>
-                <div class="form-group">
-                    <label for="anmerkungen" class="form-label">Anmerkungen</label>
-                    <textarea class="form-control" rows="5" cols="50" id="anmerkungen" name="anmerkungen"
-                        placeholder="Platz für Ihre Anmerkungen" tabindex="9"></textarea>
-                </div>
-                <input type="hidden" name="_next" value="http://127.0.0.1:5500/contact.html">
-                <input type="hidden" name="_captcha" value="false">
-                <div>
-                    <button type="submit" class="btn button-small">Abschicken</button>
-                </div>
-            </form>
-        </div>
+            </div>
+        </section>
     </div>
 
 
-    <footer class="flex row wrap">
+    <footer class="flex row wrap max-width">
         <a class="logo-container" href="index.html">
             <img class="logo-footer" src="Assets/logo-vertical.svg" alt="A.Sauber Alles Sauber Gebäudereinigung Logo">
         </a>
         <nav>
             <span>Menü</span>
-            <ul id="secondary-navigation" class="secondary-navigation flex column   ">
+            <ul class="secondary-navigation flex column   ">
                 <li>
                     <a href="/index.html" class="sec-nav-link">Startseite</a>
                 </li>
                 <li>
-                    <a href="/services.html" class="sec-nav-link">Services</a>
+                    <a href="/services.html" class="active sec-nav-link">Services</a>
                 </li>
                 <li>
                     <a href="/about-us.html" class="sec-nav-link">Über Uns</a>
                 </li>
                 <li>
-                    <a href="/contact.html" class="active sec-nav-link">Kontakt</a>
+                    <a href="/contact.html" class="sec-nav-link">Kontakt</a>
                 </li>
             </ul>
         </nav>
 
         <nav>
             <span>Hilfe</span>
-            <ul id="secondary-navigation" class="secondary-navigation flex column">
+            <ul class="secondary-navigation flex column">
                 <li>
                     <a href="/impressum.html" class="sec-nav-link">Impressum</a>
                 </li>
@@ -171,17 +158,19 @@
 
         <div class="contact">
             <span>Kontakt</span>
-            <div class="contact-container">
-                <img class="contact-icon" src="Assets/icons/phone-icon.svg" alt="Telefonnummer">
-                <p>+49 123 4567 8901</p>
-            </div>
-            <div class="contact-container">
-                <img class="contact-icon" src="Assets/icons/mail-icon.svg" alt="Email">
-                <p>hilfe@example.com</p>
-            </div>
-            <div class="contact-container">
-                <img class="contact-icon" src="Assets/icons/location-icon.svg" alt="Standort">
-                <p>Musterstraße 72<br>30982 München, Deutschland</p>
+            <div class="contact-wrapper-footer">
+                <div class="contact-container">
+                    <img class="contact-icon" src="Assets/icons/phone-icon.svg" alt="Telefonnummer">
+                    <p>+49 123 4567 8901</p>
+                </div>
+                <div class="contact-container">
+                    <img class="contact-icon" src="Assets/icons/mail-icon.svg" alt="Email">
+                    <p>hilfe@example.com</p>
+                </div>
+                <div class="contact-container">
+                    <img class="contact-icon" src="Assets/icons/location-icon.svg" alt="Standort">
+                    <p>Musterstraße 72<br>30982 München, Deutschland</p>
+                </div>
             </div>
         </div>
     </footer>

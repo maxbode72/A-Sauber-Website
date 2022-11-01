@@ -5,6 +5,20 @@
   --color-offwhite: #f6fafd;
   --color-primary-light: #eaf6ff;
 
+  --fz-xl: clamp(3.5rem, 12vw + 1rem, 5rem);
+  --fz-600: 2rem;
+  --fz-500: 1.5rem;
+  --fz-400: 1.25rem;
+  --fz-300: 1rem;
+}
+
+@media (max-width: 40em) {
+  :root {
+    --fz-600: 3rem;
+    --fz-500: 1.5rem;
+    --fz-400: 1.25rem;
+    --fz-300: 1.125rem;
+  }
 }
 
 *, *::before, *::after {
@@ -17,8 +31,12 @@ h2,
 h3,
 h4 {
   line-height: 1.1em;
-  font-weight: 700;
+  font-weight: 900;
   padding: 0;
+  margin: 0;
+}
+
+p {
   margin: 0;
 }
 
@@ -55,7 +73,7 @@ img {
 /* --------------- */
 
 .maxwidth {
-  max-width: 1800px;
+  max-width: 1500px;
 }
 
 .none {

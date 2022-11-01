@@ -47,7 +47,18 @@ nav {
     color: var(--color-primary);
 }
 
+
+.primary-navigation a {
+  white-space: nowrap;
+}
+
 @media (max-width: 70em) {
+  nav ul li:last-child {
+    display: none;
+  }
+}
+
+@media (max-width: 55em) {
   .primary-header {
     padding: 0 8em 0 0;
   }
@@ -69,7 +80,6 @@ nav {
     transition: transform 300ms ease-out;
 
     overflow-y: hidden;
-
   }
 
   .primary-navigation[data-visible="true"] {
@@ -93,14 +103,13 @@ nav {
   .mobile-nav-toggle[aria-expanded="true"] {
     background-image: url("assets/icons/menu-close.svg");
   }
-
 }
 
-@media (min-width: 70em) {
+@media (min-width: 50em) {
   .primary-navigation {
     --gap: clamp(1.5rem, 20vw, 3rem);
     padding-block: 2rem;
-    padding-inline: clamp(3rem, 5vw, 10rem);
+    padding-inline: clamp(1rem, 2vw, 3rem);
   }
 }
 
@@ -113,27 +122,31 @@ nav {
   background-position: right bottom;
   background-repeat: no-repeat;
 
-  height: 82vh;
-  padding: 2em 5em;
+  height: 90vh;
+  padding: 1em 3em;
   
   justify-content: center;
 }
 
 .hero h1 {
   max-width: 12ch;
+  font-size: var(--fz-xl);
 }
 
 .hero p{
-  margin-bottom: 3em;
+  margin-bottom: 2em;
+  font-size: var(--fz-400);
   max-width: 45ch;
 }
 
 @media (max-width: 70em) {
   .hero {
-    padding: 1.5em;
-    padding: 3em;
-    height: 100vh;
+    padding: 5em 1em;
+    height: auto;
     justify-content: start;
+    background-image: none;
+    text-align: center;
+    align-items: center;
   }
 }
 
@@ -143,19 +156,18 @@ nav {
 /* ----------------- */
 
 .service {
-  padding: 3em;
+  padding: 5em 3em;
   gap: 3em;
   min-height: 18em;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: var(--color-offwhite);
+  background-color: var(--color-primary-light);
 }
 
 .service-title span {
   max-width: 45ch;
   color: var(--color-grey);
-
 }
 
 .service-wrapper {
@@ -167,8 +179,8 @@ nav {
   display: flex;
   gap: 1em;
   background-color: var(--color-white);
-  max-width: 35ch;
-  height: 8em;
+  max-width: 45ch;
+  height: 10em;
   padding: 1em;
   border-radius: 3px;
   text-align: left;
@@ -178,6 +190,7 @@ nav {
 .service-container img {
   height: 4.5em;
   aspect-ratio: 1;
+  margin: 1em;
 }
 
 .service-content {
@@ -187,7 +200,8 @@ nav {
 }
 
 .service-content span {
-  font-weight: 600;
+  font-weight: 700;
+  font-size: var(--fz-400);
 }
 
 .service-content p {
@@ -196,11 +210,8 @@ nav {
   margin: 0;
 }
 
-
-@media (max-width: 35em) {
-  .service {
-    padding: 1.5em;
-  }
+.service-price {
+  font-weight: 700;
 }
 
 
@@ -243,6 +254,13 @@ nav ul {
   color: var(--color-primary);
 }
 
+.contact-wrapper {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: .75em;
+}
+
 .contact span {
   text-transform: uppercase;
   font-weight: 600;
@@ -257,9 +275,12 @@ nav ul {
 }
 
 .contact-icon {
-  height: 2em;
+  height: 1.5rem;
   aspect-ratio: 1;
-  fill: red;
+}
+
+.contact p {
+  color: var(--color-grey);
 }
 
 @media (max-width: 35em) {

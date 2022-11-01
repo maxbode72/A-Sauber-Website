@@ -47,7 +47,18 @@ nav {
   color: var(--color-primary);
 }
 
+
+.primary-navigation a {
+  white-space: nowrap;
+}
+
 @media (max-width: 70em) {
+  nav ul li:last-child {
+    display: none;
+  }
+}
+
+@media (max-width: 55em) {
   .primary-header {
     padding: 0 8em 0 0;
   }
@@ -94,11 +105,11 @@ nav {
   }
 }
 
-@media (min-width: 70em) {
+@media (min-width: 50em) {
   .primary-navigation {
     --gap: clamp(1.5rem, 20vw, 3rem);
     padding-block: 2rem;
-    padding-inline: clamp(3rem, 5vw, 10rem);
+    padding-inline: clamp(1rem, 2vw, 3rem);
   }
 }
 
@@ -145,6 +156,13 @@ nav ul {
   color: var(--color-primary);
 }
 
+.contact-wrapper {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: .75em;
+}
+
 .contact span {
   text-transform: uppercase;
   font-weight: 600;
@@ -159,9 +177,12 @@ nav ul {
 }
 
 .contact-icon {
-  height: 2em;
+  height: 1.5rem;
   aspect-ratio: 1;
-  fill: red;
+}
+
+.contact p {
+  color: var(--color-grey);
 }
 
 @media (max-width: 35em) {
