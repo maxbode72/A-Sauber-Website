@@ -125,6 +125,70 @@ section {
   padding: 3em;
   gap: 3em;
   max-width: 1800px;
+  width: 100%;
+}
+
+.aboutus-title {
+  padding-block: 3em;
+}
+
+.aboutus-title span {
+  font-size: 1.15em;
+  line-height: 1.5em;
+  max-width: 70ch;
+  color: var(--color-grey);
+}
+
+.aboutus-container {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.text {
+  --gap: 1.5em;
+  flex: 1;
+}
+
+.aboutus-illustration {
+  flex: 1;
+  justify-content: center;
+}
+
+.aboutus-container img {
+  transform: translateY(-5em);
+  width: 40em;
+}
+
+.unsere-werte-title {
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+.aboutus-facts {
+  list-style: none; /* Remove default bullets */
+  --gap: 1rem;
+  padding: 1em;
+}
+
+.aboutus-facts li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: var(--color-primary); /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.aboutus-facts span {
+  font-size: 1.125em;
+}
+
+.aboutus-container {
+  --gap: 4em;
+}
+
+.aboutus-content p {
+  max-width: 80ch;
 }
 
 

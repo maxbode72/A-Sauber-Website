@@ -132,6 +132,8 @@ nav {
 }
 
 .service-title span {
+  font-size: 1.15em;
+  line-height: 1.5em;
   max-width: 70ch;
   color: var(--color-grey);
 }
