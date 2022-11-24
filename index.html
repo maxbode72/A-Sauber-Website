@@ -47,37 +47,39 @@
 
     <div class="wrapper max-width">
         <div class="hero flex column">
-            <h1>Lorem, ipsum dolor sit amet</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, magni?</p>
+            <h1>Alles Sauber<br>Gebäudereinigung</h1>
+            <p>Wir bieten Ihnen einen Reinigungsservice individuell zugeschnitten auf Ihre Bedürfnisse.</p>
             <a href="/contact.html" class="button-small text-caps">JETZT ANFRAGEN</a>
         </div>
         <section class="service flex column">
             <div class="service-box flex column">
                 <div class="service-title flex column">
                     <h2>Beliebteste Services</h2>
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quo asperiores
-                        placeat?</span>
+                    <span>Unsere am meisten in Anspruch genommen Angebote</span>
                 </div>
                 <div class="service-wrapper flex row wrap max-width">
                     <div class="service-container">
+                        <img src="assets/illustrations/SVG/13 Mop.svg" alt="">
+                        <div class="service-content">
+                            <span>Grundreinigung</span>
+                            <p>Erhalten Sie mit unserer professionellen Unterhaltsreinigung langfristig den Wert Ihrer
+                                Immobilie!</p>
+                        </div>
+                    </div>
+                    <div class="service-container">
                         <img src="assets/illustrations/SVG/01 Broom.svg" alt="">
                         <div class="service-content">
-                            <span>Service 1</span>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, nobis.</p>
+                            <span>Büroreinigung</span>
+                            <p>Mit unserer professionellen Büroreinigung verbessern Sie die Arbeitsatmosphäre in Ihren
+                                Büroräumen und sorgen für eine schöne Umgebung.</p>
                         </div>
                     </div>
                     <div class="service-container">
-                        <img src="assets/illustrations/SVG/15 Vacuum Cleaner.svg" alt="">
+                        <img src="assets/illustrations/SVG/10 Wiper Stick.svg" alt="">
                         <div class="service-content">
-                            <span>Service 2</span>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, nobis.</p>
-                        </div>
-                    </div>
-                    <div class="service-container">
-                        <img src="assets/illustrations/SVG/21 Cleaning Cart.svg" alt="">
-                        <div class="service-content">
-                            <span>Service 3</span>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, nobis.</p>
+                            <span>Glasreinigung</span>
+                            <p>Sorgen Sie mit einer professionellen Glasreinigung von uns für einen guten Durchblick!
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -88,8 +90,70 @@
         </section>
         <section class="contact-section">
             <div class="contact-box">
-                <h3>Einfache Kontaktanfrage per Formular</h3>
-
+                <h3>Wie Sie mit uns Kontakt aufnehmen können?</h3>
+                <div class="contactsection-wrapper flex row max-width">
+                    <div class="container">
+                        <form action="https://formsubmit.co/d61cd93979b4267d5e6c2437db37aed2" method="POST"
+                            class="form">
+                            <div class="name-group">
+                                <div class="form-group vorname">
+                                    <label for="vorname" class="form-label">Vorname*</label>
+                                    <input type="vorname" class="form-control" id="vorname" name="vorname"
+                                        placeholder="Vorname" tabindex="1" required>
+                                </div>
+                                <div class="form-group nachname">
+                                    <label for="nachname" class="form-label">Nachname*</label>
+                                    <input type="nachname" class="form-control" id="nachname" name="nachname"
+                                        placeholder="Nachname" tabindex="2" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email*</label>
+                                <input type="email" class="form-control" id="email" name="email"
+                                    placeholder="Email Adresse" tabindex="3" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="telefonnummer" class="form-label">Telefonnummer</label>
+                                <input type="tel" class="form-control" id="telefonnummer" name="telefonnummer"
+                                    placeholder="Telefonnummer" tabindex="4">
+                            </div>
+                            <div class="form-group">
+                                <label for="betreff" class="form-label">Betreff*</label>
+                                <input type="text" class="form-control" id="betreff" name="betreff"
+                                    placeholder="Betreff" tabindex="5" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="anmerkungen" class="form-label">Anmerkungen</label>
+                                <textarea class="form-control" rows="5" cols="50" id="anmerkungen" name="anmerkungen"
+                                    placeholder="Platz für Ihre Anmerkungen" tabindex="6"></textarea>
+                            </div>
+                            <input type="hidden" name="_next" value="http://127.0.0.1:5500/contact.html">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="table">
+                            <div>
+                                <button type="submit" class="btn button-small">Abschicken</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="contact-data flex column">
+                        <div class="contact-data-container">
+                            <p>Füllen Sie ganz einfach unser <a href="contact.html">Kontaktformular</a> aus oder rufen Sie uns
+                                an um einen Termin für ein komplett unverbindliches Gespräch zu vereinbaren.</p>
+                        </div>
+                        <div class="contact-data-container">
+                            <p class="contact-title">Adresse</p>
+                            <p>Musterstraße 72<br>30982 München, Deutschland</p>
+                        </div>
+                        <div class="contact-data-container">
+                            <p class="contact-title">Telefonnummer</p>
+                            <p>+49 123 4567 8901</p>
+                        </div>
+                        <div class="contact-data-container">
+                            <p class="contact-title">Email</p>
+                            <p>mail@example.com</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </div>

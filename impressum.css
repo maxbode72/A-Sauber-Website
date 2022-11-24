@@ -1,0 +1,241 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", Helvetica, Arial;
+    font-size: 14px;
+  }
+  
+  /* ---------------- */
+  /*   Header & nav   */
+  /* ---------------- */
+  
+  nav {
+    align-items: center;
+  }
+  
+  .primary-header {
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2em;
+    height: 80px;
+  }
+  
+  .mobile-nav-toggle {
+    display: none;
+  }
+  
+  .logo {
+    margin: 1.5em;
+    height: 4em;
+  }
+  
+  .primary-navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+  }
+  
+  .nav-link {
+    font-weight: 500;
+    color: var(--color-grey);
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  
+  .nav-link:hover {
+    color: var(--color-primary);
+  }
+  
+  .primary-navigation a {
+    white-space: nowrap;
+  }
+  
+  @media (max-width: 70em) {
+    nav ul li:last-child {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 55em) {
+    .primary-header {
+      padding: 0 8em 0 0;
+    }
+  
+    .primary-navigation {
+      --gap: 2em;
+  
+      position: fixed;
+      z-index: 1000;
+      inset: 0 0 0 30%;
+  
+      text-align: left;
+  
+      flex-direction: column;
+      padding: 5em 2em;
+      background: var(--color-white);
+  
+      transform: translateX(100%);
+      transition: transform 300ms ease-out;
+  
+      overflow-y: hidden;
+    }
+  
+    .primary-navigation[data-visible="true"] {
+      transform: translateX(0%);
+    }
+  
+    .mobile-nav-toggle {
+      display: block;
+      position: absolute;
+      width: 2rem;
+      aspect-ratio: 1;
+      top: 1.5rem;
+      right: 1.5rem;
+      z-index: 9999;
+      border: 0;
+      background: transparent;
+      background-image: url("assets/icons/burgermenu.svg");
+      background-repeat: no-repeat;
+    }
+  
+    .mobile-nav-toggle[aria-expanded="true"] {
+      background-image: url("assets/icons/menu-close.svg");
+    }
+  }
+  
+  @media (min-width: 50em) {
+    .primary-navigation {
+      --gap: clamp(1.5rem, 20vw, 3rem);
+      padding-block: 2rem;
+      padding-inline: clamp(1rem, 2vw, 3rem);
+    }
+  }
+  
+  
+  /* --------- */
+  /*  Wrapper  */
+  /* --------- */
+  
+  .wrapper {
+    justify-content: center;
+  }
+  
+  .impressum {
+    padding: 3em;
+    gap: 3em;
+    max-width: 1800px;
+  }
+  
+  .impressum-title {
+    padding-block: 3em;
+  }
+  
+  .impressum-title span {
+    font-size: 1.15em;
+    line-height: 1.5em;
+    max-width: 70ch;
+    color: var(--color-grey);
+  }
+  
+  .impressum-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 3em;
+  }
+ 
+  
+  
+  @media (max-width: 50em) {
+    .impressum {
+      padding: 1.5em;
+    }
+  }
+  
+  
+  
+  /* -------- */
+  /*  Footer  */
+  /* -------- */
+  
+  footer {
+    background-color: var(--color-offwhite);
+    padding: 2em;
+    justify-content: space-around;
+    border-top: 1px solid var(--color-primary);
+  }
+  
+  footer nav {
+    width: 12em;
+  }
+  
+  .logo-footer {
+    height: 7em;
+  }
+  
+  nav span {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--color-grey);
+    cursor: default;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sec-nav-link {
+    color: var(--color-grey);
+  }
+  
+  .sec-nav-link:hover {
+    color: var(--color-primary);
+  }
+  
+  .contact-wrapper {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: .75em;
+  }
+  
+  .contact span {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--color-grey);
+    cursor: default;
+  }
+  
+  .contact-container {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+  }
+  
+  .contact-icon {
+    height: 1.5rem;
+    aspect-ratio: 1;
+  }
+  
+  .contact p {
+    color: var(--color-grey);
+  }
+  
+  @media (max-width: 35em) {
+    footer {
+      justify-content: left;
+      --gap: 2em;
+      flex-direction: column;
+    }
+  
+    .logo-container {
+      display: none;
+    }
+  
+    .secondary-navigation {
+      --gap: 1em;
+    }
+  }
+  

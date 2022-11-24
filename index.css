@@ -148,6 +148,10 @@ nav {
     text-align: center;
     align-items: center;
   }
+
+  .hero h1 {
+    font-size: 2.5em;
+  }
 }
 
 
@@ -228,6 +232,7 @@ nav {
 .contact-section {
   min-height: 18em;
   align-items: center;
+  justify-content: center;
 }
 
 .contact-box {
@@ -236,12 +241,155 @@ nav {
   padding: 5em 3em;
   gap: 3em;
   align-items: center;
+}
+
+.contact-box h3 {
+  margin-bottom: 1em;
   text-align: center;
 }
 
 .service-title span {
   max-width: 45ch;
   color: var(--color-grey);
+}
+
+.contactsection-wrapper {
+  width: 100%;
+  justify-content: center;
+  gap: 3em;
+}
+
+.contactsection-wrapper p {
+  font-size: 1.15em;
+  max-width: 40ch;
+  flex-direction: row;
+}
+
+.contactsection-wrapper a {
+  color: var(--color-primary);
+}
+
+.contactsection-wrapper a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 35em) {
+  .wrapper {
+    padding: 2em 1em 4em 1em;
+  }
+
+  .contactsection-wrapper {
+    flex-direction: column-reverse;
+    padding-block: 0;
+  }
+
+  .container {
+    width: auto !important;
+  }
+}
+
+/* -------------- */
+/*  Contact Data  */
+/* -------------- */
+
+.contact-data {
+  --gap: 2em;
+}
+
+.contact-data-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.contact-data-container p {
+  margin: 0;
+}
+
+.contact-title {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+
+/* --------- */
+/*  Webform  */
+/* --------- */
+
+.container {
+  width: 500px;
+  padding: 2em;
+  background-color: var(--color-primary-light);
+  border-radius: 3px;
+  font-family: "Inter", Helvetica, Arial;
+}
+
+.name-group {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.vorname,
+.nachname {
+  width: 45%;
+}
+
+.wohnort-group {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.plz {
+  width: 20%;
+}
+
+.ort {
+  width: 75%;
+}
+
+.form-group {
+  margin-bottom: 1.5em;
+}
+.form-label {
+  font-size: 0.75em;
+  color: var(--color-grey);
+  display: block;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+.form-control {
+  box-shadow: none;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  font-size: 1em;
+  height: 3em;
+}
+.form-control::placeholder {
+  color: #70707060;
+}
+.form-control:focus {
+  box-shadow: none;
+  border-color: var(--color-primary);
+  border: 1px solid;
+  outline: none;
+}
+
+.form-control:invalid:focus {
+  border-color: red;
+}
+.form-control:valid:focus {
+  border-color: green;
+}
+textarea {
+  resize: none;
+  height: 10em !important;
+  font-family: "Inter", Helvetica, Arial;
 }
 
 
